@@ -1,0 +1,284 @@
+2025-02-13 10:45:14 [INFO]: Incoming Request: POST /users/signup
+2025-02-13 10:45:14 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"e39f142a-71bb-4f07-b0bd-bae871e318ea","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"85"}
+2025-02-13 10:45:14 [INFO]: Body: {"email":"sakib@gmail.com","password":"12345678","role":"Admin"}
+2025-02-13 10:45:14 [INFO]: Response: POST /users/signup - Status: 201 - Time Taken: 179ms
+2025-02-13 10:45:14 [INFO]: Response Body: {"email":"sakib@gmail.com","password":"$2b$10$o44s2A/YqtIzwZC/vlC.fO/8HejZi9kEnhZi06kOghTAi5pmqXnNK","id":"88a5ae72-c252-4dda-be61-2ade7ebcfb6c","role":"viewer"}
+2025-02-13 10:45:26 [INFO]: Incoming Request: POST /users/signup
+2025-02-13 10:45:26 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"36a3580e-6c0c-41a6-8642-832f96f73500","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"85"}
+2025-02-13 10:45:26 [INFO]: Body: {"email":"sakib@gmail.com","password":"12345678","role":"Admin"}
+2025-02-13 10:47:25 [INFO]: Incoming Request: POST /users/signup
+2025-02-13 10:47:25 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"be83a221-3050-4463-8040-0a093bcd8ca4","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"85"}
+2025-02-13 10:47:25 [INFO]: Body: {"email":"sakib@gmail.com","password":"12345678","role":"Admin"}
+2025-02-13 10:52:38 [INFO]: Incoming Request: POST /users/signup
+2025-02-13 10:52:38 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"53e82dea-1b11-4203-806f-9e2e7d80dce0","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"85"}
+2025-02-13 10:52:38 [INFO]: Body: {"email":"sakib@gmail.com","password":"12345678","role":"Admin"}
+2025-02-13 10:52:38 [INFO]: Response: POST /users/signup - Status: 201 - Time Taken: 13ms
+2025-02-13 10:52:38 [INFO]: Response Body: {"success":false,"message":"User already exists"}
+2025-02-13 10:55:10 [INFO]: Incoming Request: POST /users/signup
+2025-02-13 10:55:10 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"3cb709c2-96dd-46e1-97b4-d65511f147fa","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"85"}
+2025-02-13 10:55:10 [INFO]: Body: {"email":"sakib@gmail.com","password":"12345678","role":"Admin"}
+2025-02-13 10:55:10 [ERROR]: Error 302: "User already exists"
+2025-02-13 12:20:04 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 12:20:04 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"583b52b8-699d-458b-9719-a654dbc1e4e0","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"64"}
+2025-02-13 12:20:04 [INFO]: Body: {"email":"admin@jktech.com","password":"admin123"}
+2025-02-13 12:20:04 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 8ms
+2025-02-13 12:20:04 [INFO]: Response Body: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpZCI6IjNmNjI5ZTRmLTI0YTktNDlmMi1iM2RjLTY0ZDJhNTUzM2MzZSIsImlhdCI6MTczOTQyOTQwNCwiZXhwIjoxNzM5NDMzMDA0fQ.5jRTW_xkHzkYL8jkyNuX1p-yvYsZMW1MkWK91GAaFU8"}
+2025-02-13 12:24:39 [ERROR]: Error 404: {"message":"Cannot POST /documents/upload","error":"Not Found","statusCode":404}
+2025-02-13 12:27:31 [ERROR]: Error 404: {"message":"Cannot POST /documents/upload","error":"Not Found","statusCode":404}
+2025-02-13 12:34:19 [ERROR]: Error 404: {"message":"Cannot POST /documents/upload","error":"Not Found","statusCode":404}
+2025-02-13 12:34:52 [ERROR]: Error 403: {"message":"Forbidden resource","error":"Forbidden","statusCode":403}
+2025-02-13 12:36:32 [ERROR]: Error 403: {"message":"Forbidden resource","error":"Forbidden","statusCode":403}
+2025-02-13 12:37:00 [ERROR]: Error 403: {"message":"Forbidden resource","error":"Forbidden","statusCode":403}
+2025-02-13 12:37:09 [ERROR]: Error 403: {"message":"Forbidden resource","error":"Forbidden","statusCode":403}
+2025-02-13 12:37:18 [ERROR]: Error 403: {"message":"Forbidden resource","error":"Forbidden","statusCode":403}
+2025-02-13 12:38:45 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 12:38:45 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"a879c0a7-264e-42e9-b124-bc4a65b17694","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"64"}
+2025-02-13 12:38:45 [INFO]: Body: {"email":"admin@jktech.com","password":"admin123"}
+2025-02-13 12:38:45 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 15ms
+2025-02-13 12:38:45 [INFO]: Response Body: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpZCI6IjNmNjI5ZTRmLTI0YTktNDlmMi1iM2RjLTY0ZDJhNTUzM2MzZSIsImlhdCI6MTczOTQzMDUyNSwiZXhwIjoxNzM5NDM0MTI1fQ.kc7lcHuYuyfanvzrpIMIyT6sPbDtM18sXmQAysOzRik"}
+2025-02-13 12:39:06 [ERROR]: Error 403: {"message":"Forbidden resource","error":"Forbidden","statusCode":403}
+2025-02-13 12:39:29 [ERROR]: Error 403: {"message":"Forbidden resource","error":"Forbidden","statusCode":403}
+2025-02-13 12:41:16 [ERROR]: Error 403: {"message":"Forbidden resource","error":"Forbidden","statusCode":403}
+2025-02-13 12:41:20 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 12:41:20 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"c1f2ce58-8045-417e-bab1-dd976a35f4ee","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"64"}
+2025-02-13 12:41:20 [INFO]: Body: {"email":"admin@jktech.com","password":"admin123"}
+2025-02-13 12:41:20 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 11ms
+2025-02-13 12:41:20 [INFO]: Response Body: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpZCI6IjNmNjI5ZTRmLTI0YTktNDlmMi1iM2RjLTY0ZDJhNTUzM2MzZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczOTQzMDY4MCwiZXhwIjoxNzM5NDM0MjgwfQ.a5E0ohg-jnb8EpxonEjnGRYeG-252kt_ZMZbu5tHUW0"}
+2025-02-13 12:41:41 [INFO]: Incoming Request: POST /documents/upload
+2025-02-13 12:41:41 [INFO]: Headers: {"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpZCI6IjNmNjI5ZTRmLTI0YTktNDlmMi1iM2RjLTY0ZDJhNTUzM2MzZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczOTQzMDY4MCwiZXhwIjoxNzM5NDM0MjgwfQ.a5E0ohg-jnb8EpxonEjnGRYeG-252kt_ZMZbu5tHUW0","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"26d72968-45f3-42ab-a89c-5f4d8fd76e5a","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-type":"multipart/form-data; boundary=--------------------------701762189065047924042222","content-length":"96205"}
+2025-02-13 12:41:41 [INFO]: Response: POST /documents/upload - Status: 201 - Time Taken: 64ms
+2025-02-13 12:41:41 [INFO]: Response Body: {"title":"400010060261_pay_PpzeXyFPmps3sG.pdf","content":"/uploads/undefined","fileType":"application/pdf","size":95967,"owner":{"id":"3f629e4f-24a9-49f2-b3dc-64d2a5533c3e","email":"admin@jktech.com","role":"admin"},"id":"6a291465-71b6-4aa8-a984-9dc4e0a3df19"}
+2025-02-13 12:43:03 [INFO]: Incoming Request: POST /documents/upload
+2025-02-13 12:43:03 [INFO]: Headers: {"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpZCI6IjNmNjI5ZTRmLTI0YTktNDlmMi1iM2RjLTY0ZDJhNTUzM2MzZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczOTQzMDY4MCwiZXhwIjoxNzM5NDM0MjgwfQ.a5E0ohg-jnb8EpxonEjnGRYeG-252kt_ZMZbu5tHUW0","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"d96bc3ce-7674-4f79-9370-7e5da30e2936","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-type":"multipart/form-data; boundary=--------------------------059011250570395388576986","content-length":"96205"}
+2025-02-13 12:43:03 [INFO]: Response: POST /documents/upload - Status: 201 - Time Taken: 45ms
+2025-02-13 12:43:03 [INFO]: Response Body: {"title":"400010060261_pay_PpzeXyFPmps3sG.pdf","content":"/uploads/undefined","fileType":"application/pdf","size":95967,"owner":{"id":"3f629e4f-24a9-49f2-b3dc-64d2a5533c3e","email":"admin@jktech.com","role":"admin"},"id":"8b0bdcf8-da2a-4dc8-ac61-a42926068e6e"}
+2025-02-13 13:10:05 [ERROR]: Error 401: {"message":"Unauthorized","statusCode":401}
+2025-02-13 13:10:34 [ERROR]: Error 401: {"message":"Unauthorized","statusCode":401}
+2025-02-13 13:10:51 [ERROR]: Error 401: {"message":"Unauthorized","statusCode":401}
+2025-02-13 13:11:22 [ERROR]: Error 401: {"message":"Unauthorized","statusCode":401}
+2025-02-13 13:50:35 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 13:50:35 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"2019f704-103d-4d46-90f3-64382da8e0e6","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"64"}
+2025-02-13 13:50:35 [INFO]: Body: {"email":"admin@jktech.com","password":"admin123"}
+2025-02-13 13:50:35 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 8ms
+2025-02-13 13:50:35 [INFO]: Response Body: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpZCI6IjNmNjI5ZTRmLTI0YTktNDlmMi1iM2RjLTY0ZDJhNTUzM2MzZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczOTQzNDgzNSwiZXhwIjoxNzM5NDM4NDM1fQ.OTr3QYkNk9ygK_YoqtiFF-xndnIYQXdnOFeQXe48EL4"}
+2025-02-13 13:51:07 [ERROR]: Error 401: {"message":"Unauthorized","statusCode":401}
+2025-02-13 13:51:11 [ERROR]: Error 401: {"message":"Unauthorized","statusCode":401}
+2025-02-13 13:51:29 [ERROR]: Error 401: {"message":"Unauthorized","statusCode":401}
+2025-02-13 13:51:44 [ERROR]: Error 401: {"message":"Unauthorized","statusCode":401}
+2025-02-13 13:52:17 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 13:52:17 [ERROR]: Error 404: {"message":"User not found","error":"Not Found","statusCode":404}
+2025-02-13 13:52:17 [INFO]: Headers: {"host":"localhost:3000","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","authorization":"Bearer bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpZCI6IjNmNjI5ZTRmLTI0YTktNDlmMi1iM2RjLTY0ZDJhNTUzM2MzZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczOTQzNDgzNSwiZXhwIjoxNzM5NDM4NDM1fQ.OTr3QYkNk9ygK_YoqtiFF-xndnIYQXdnOFeQXe48EL4","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","accept":"*/*","sec-ch-ua":"\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"","sec-ch-ua-mobile":"?0","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/api/docs","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}
+2025-02-13 13:52:28 [ERROR]: Error 401: {"message":"Unauthorized","statusCode":401}
+2025-02-13 13:54:13 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 13:54:13 [ERROR]: Error 404: {"message":"User not found","error":"Not Found","statusCode":404}
+2025-02-13 13:54:13 [INFO]: Headers: {"host":"localhost:3000","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","authorization":"Bearer bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpZCI6IjNmNjI5ZTRmLTI0YTktNDlmMi1iM2RjLTY0ZDJhNTUzM2MzZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczOTQzNDgzNSwiZXhwIjoxNzM5NDM4NDM1fQ.OTr3QYkNk9ygK_YoqtiFF-xndnIYQXdnOFeQXe48EL4","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","accept":"*/*","sec-ch-ua":"\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"","sec-ch-ua-mobile":"?0","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/api/docs","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}
+2025-02-13 13:54:36 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 13:54:36 [ERROR]: Error 404: {"message":"User not found","error":"Not Found","statusCode":404}
+2025-02-13 13:54:36 [INFO]: Headers: {"host":"localhost:3000","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","authorization":"Bearer bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpZCI6IjNmNjI5ZTRmLTI0YTktNDlmMi1iM2RjLTY0ZDJhNTUzM2MzZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczOTQzNDgzNSwiZXhwIjoxNzM5NDM4NDM1fQ.OTr3QYkNk9ygK_YoqtiFF-xndnIYQXdnOFeQXe48EL4","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","accept":"*/*","sec-ch-ua":"\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"","sec-ch-ua-mobile":"?0","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/api/docs","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}
+2025-02-13 13:59:37 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 13:59:37 [INFO]: Headers: {"host":"localhost:3000","connection":"keep-alive","content-length":"59","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","accept":"*/*","sec-ch-ua":"\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"","content-type":"application/json","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/api/docs","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}
+2025-02-13 13:59:37 [INFO]: Body: {"email":"admin@jktech.com","password":"admin123"}
+2025-02-13 14:00:23 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:00:23 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"42be8113-f77a-46e3-8c6c-34cdc8284b43","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"64"}
+2025-02-13 14:00:23 [INFO]: Body: {"email":"admin@jktech.com","password":"admin123"}
+2025-02-13 14:01:16 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:01:16 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"acc4712e-dbed-4d55-bdc5-2e32a5e983d7","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"64"}
+2025-02-13 14:01:16 [INFO]: Body: {"email":"admin@jktech.com","password":"admin123"}
+2025-02-13 14:01:27 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:01:27 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"a673ed8a-703f-4267-9e84-c023ffff12cd","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"64"}
+2025-02-13 14:01:27 [INFO]: Body: {"email":"admin@jktech.com","password":"admin123"}
+2025-02-13 14:01:27 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 12ms
+2025-02-13 14:01:27 [INFO]: Response Body: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzU0ODcsImV4cCI6MTczOTQzOTA4N30.MGQHc6iBwGyqBlLLqT2TCT85ok9tsQO9j-8zBCtbJ5Y"}
+2025-02-13 14:01:42 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:01:42 [INFO]: Headers: {"host":"localhost:3000","connection":"keep-alive","content-length":"59","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","accept":"*/*","sec-ch-ua":"\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"","content-type":"application/json","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/api/docs","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}
+2025-02-13 14:01:42 [INFO]: Body: {"email":"admin@jktech.com","password":"admin123"}
+2025-02-13 14:01:42 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 5ms
+2025-02-13 14:01:42 [INFO]: Response Body: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzU1MDIsImV4cCI6MTczOTQzOTEwMn0.m9abNdN7pmu4aYgrjkJ1-7Xz2icwJVO8UhAF7_uPwLg"}
+2025-02-13 14:02:16 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:02:16 [ERROR]: Error 404: {"message":"User not found","error":"Not Found","statusCode":404}
+2025-02-13 14:02:16 [INFO]: Headers: {"host":"localhost:3000","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","authorization":"Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzU1MDIsImV4cCI6MTczOTQzOTEwMn0.m9abNdN7pmu4aYgrjkJ1-7Xz2icwJVO8UhAF7_uPwLg","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","accept":"*/*","sec-ch-ua":"\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"","sec-ch-ua-mobile":"?0","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/api/docs","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}
+2025-02-13 14:02:34 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:02:34 [ERROR]: Error 404: {"message":"User not found","error":"Not Found","statusCode":404}
+2025-02-13 14:02:34 [INFO]: Headers: {"host":"localhost:3000","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","authorization":"Bearer \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzU1MDIsImV4cCI6MTczOTQzOTEwMn0.m9abNdN7pmu4aYgrjkJ1-7Xz2icwJVO8UhAF7_uPwLg","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","accept":"*/*","sec-ch-ua":"\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"","sec-ch-ua-mobile":"?0","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/api/docs","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}
+2025-02-13 14:03:25 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:03:25 [ERROR]: Error 404: {"message":"User not found","error":"Not Found","statusCode":404}
+2025-02-13 14:03:25 [INFO]: Headers: {"host":"localhost:3000","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","authorization":"Bearer \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzU1MDIsImV4cCI6MTczOTQzOTEwMn0.m9abNdN7pmu4aYgrjkJ1-7Xz2icwJVO8UhAF7_uPwLg","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","accept":"*/*","sec-ch-ua":"\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"","sec-ch-ua-mobile":"?0","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/api/docs","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}
+2025-02-13 14:05:21 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:05:21 [ERROR]: Error 401: {"message":"Not authenticated","error":"Unauthorized","statusCode":401}
+2025-02-13 14:05:21 [INFO]: Headers: {"host":"localhost:3000","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","authorization":"Bearer \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzU1MDIsImV4cCI6MTczOTQzOTEwMn0.m9abNdN7pmu4aYgrjkJ1-7Xz2icwJVO8UhAF7_uPwLg","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","accept":"*/*","sec-ch-ua":"\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"","sec-ch-ua-mobile":"?0","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/api/docs","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}
+2025-02-13 14:05:29 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:05:29 [ERROR]: Error 401: {"message":"Not authenticated","error":"Unauthorized","statusCode":401}
+2025-02-13 14:05:29 [INFO]: Headers: {"host":"localhost:3000","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","authorization":"Bearer \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzU1MDIsImV4cCI6MTczOTQzOTEwMn0.m9abNdN7pmu4aYgrjkJ1-7Xz2icwJVO8UhAF7_uPwLg","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","accept":"*/*","sec-ch-ua":"\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"","sec-ch-ua-mobile":"?0","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/api/docs","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}
+2025-02-13 14:05:59 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:05:59 [ERROR]: Error 401: {"message":"Not authenticated","error":"Unauthorized","statusCode":401}
+2025-02-13 14:05:59 [INFO]: Headers: {"accept":"*/*","authorization":"Bearer \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzU1MDIsImV4cCI6MTczOTQzOTEwMn0.m9abNdN7pmu4aYgrjkJ1-7Xz2icwJVO8UhAF7_uPwLg","user-agent":"PostmanRuntime/7.43.0","postman-token":"d5fa9afd-42a5-4942-b089-cebf3f38c95e","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:06:50 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:06:50 [ERROR]: Error 401: {"message":"Not authenticated","error":"Unauthorized","statusCode":401}
+2025-02-13 14:06:50 [INFO]: Headers: {"accept":"*/*","authorization":"Bearer \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzU1MDIsImV4cCI6MTczOTQzOTEwMn0.m9abNdN7pmu4aYgrjkJ1-7Xz2icwJVO8UhAF7_uPwLg","user-agent":"PostmanRuntime/7.43.0","postman-token":"f6bfeb49-bd43-4689-a9a3-58b91f1ff753","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:08:32 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:08:32 [ERROR]: Error 401: {"message":"Not authenticated","error":"Unauthorized","statusCode":401}
+2025-02-13 14:08:32 [INFO]: Headers: {"accept":"*/*","authorization":"Bearer \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzU1MDIsImV4cCI6MTczOTQzOTEwMn0.m9abNdN7pmu4aYgrjkJ1-7Xz2icwJVO8UhAF7_uPwLg","user-agent":"PostmanRuntime/7.43.0","postman-token":"445ed5b2-964d-42ce-bd6f-f4e6e44ab983","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:11:21 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:11:21 [ERROR]: Error 401: {"message":"Not authenticated","error":"Unauthorized","statusCode":401}
+2025-02-13 14:11:21 [INFO]: Headers: {"accept":"*/*","authorization":"Bearer \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzU1MDIsImV4cCI6MTczOTQzOTEwMn0.m9abNdN7pmu4aYgrjkJ1-7Xz2icwJVO8UhAF7_uPwLg","user-agent":"PostmanRuntime/7.43.0","postman-token":"fe48c59a-243a-4adf-ba5f-a3e1b92e9624","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:11:43 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:11:43 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"669bcd91-1b3a-415c-8bbe-5785a78a1700","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"64"}
+2025-02-13 14:11:43 [INFO]: Body: {"email":"admin@jktech.com","password":"admin123"}
+2025-02-13 14:11:43 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 7ms
+2025-02-13 14:11:43 [INFO]: Response Body: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzYxMDMsImV4cCI6MTczOTQzOTcwM30.memoWJCcjNG3qctdt10lL7RXmiarZAeGz2aM8Fg-zYo"}
+2025-02-13 14:12:00 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:12:00 [ERROR]: Error 401: {"message":"Not authenticated","error":"Unauthorized","statusCode":401}
+2025-02-13 14:12:00 [INFO]: Headers: {"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzYxMDMsImV4cCI6MTczOTQzOTcwM30.memoWJCcjNG3qctdt10lL7RXmiarZAeGz2aM8Fg-zYo","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"2d39aed0-3309-4e37-a8df-a9b2c8710c6a","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:13:14 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:13:14 [ERROR]: Error 401: {"message":"Not authenticated","error":"Unauthorized","statusCode":401}
+2025-02-13 14:13:14 [INFO]: Headers: {"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzYxMDMsImV4cCI6MTczOTQzOTcwM30.memoWJCcjNG3qctdt10lL7RXmiarZAeGz2aM8Fg-zYo","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"cbd93496-302b-412c-9d1f-0640e30998d5","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:13:17 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:13:17 [ERROR]: Error 401: {"message":"Not authenticated","error":"Unauthorized","statusCode":401}
+2025-02-13 14:13:17 [INFO]: Headers: {"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzYxMDMsImV4cCI6MTczOTQzOTcwM30.memoWJCcjNG3qctdt10lL7RXmiarZAeGz2aM8Fg-zYo","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"6e77f7da-badb-40b8-98f7-ff8f263cd223","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:14:24 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:14:24 [ERROR]: Error 401: {"message":"Not authenticated","error":"Unauthorized","statusCode":401}
+2025-02-13 14:14:24 [INFO]: Headers: {"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzYxMDMsImV4cCI6MTczOTQzOTcwM30.memoWJCcjNG3qctdt10lL7RXmiarZAeGz2aM8Fg-zYo","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"0768de0f-73e5-411a-94fc-5c5c8ed5a251","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:14:59 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:14:59 [ERROR]: Error 401: {"message":"Not authenticated","error":"Unauthorized","statusCode":401}
+2025-02-13 14:14:59 [INFO]: Headers: {"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzYxMDMsImV4cCI6MTczOTQzOTcwM30.memoWJCcjNG3qctdt10lL7RXmiarZAeGz2aM8Fg-zYo","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"57d468e8-588c-4cb9-bc5b-9e43bb68797e","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:18:52 [ERROR]: Error 403: {"message":"Forbidden resource","error":"Forbidden","statusCode":403}
+2025-02-13 14:19:05 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:19:05 [INFO]: Body: {"email":"admin@jktech.com"}
+2025-02-13 14:19:05 [INFO]: Headers: {"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzYxMDMsImV4cCI6MTczOTQzOTcwM30.memoWJCcjNG3qctdt10lL7RXmiarZAeGz2aM8Fg-zYo","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"cf1c236c-b604-4f3e-9df8-4cb63739449b","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:19:05 [INFO]: Response: GET /users/profile - Status: 200 - Time Taken: 7ms
+2025-02-13 14:19:05 [INFO]: Response Body: {}
+2025-02-13 14:19:40 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:19:40 [INFO]: Body: {"email":"admin@jktech.com"}
+2025-02-13 14:19:40 [INFO]: Headers: {"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzYxMDMsImV4cCI6MTczOTQzOTcwM30.memoWJCcjNG3qctdt10lL7RXmiarZAeGz2aM8Fg-zYo","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"fe797ab9-6d48-4d75-a2f2-fb4c12650687","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:19:40 [INFO]: Response: GET /users/profile - Status: 200 - Time Taken: 8ms
+2025-02-13 14:19:40 [INFO]: Response Body: {}
+2025-02-13 14:21:13 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:21:13 [INFO]: Body: {"email":"admin@jktech.com"}
+2025-02-13 14:21:13 [INFO]: Headers: {"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzYxMDMsImV4cCI6MTczOTQzOTcwM30.memoWJCcjNG3qctdt10lL7RXmiarZAeGz2aM8Fg-zYo","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"3d9a688e-6a4b-40e9-9776-fce4c12b2626","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:21:13 [INFO]: Response: GET /users/profile - Status: 200 - Time Taken: 5ms
+2025-02-13 14:21:13 [INFO]: Response Body: {}
+2025-02-13 14:21:40 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:21:40 [INFO]: Body: {"email":"admin@jktech.com"}
+2025-02-13 14:21:40 [INFO]: Headers: {"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzYxMDMsImV4cCI6MTczOTQzOTcwM30.memoWJCcjNG3qctdt10lL7RXmiarZAeGz2aM8Fg-zYo","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"89d2ecc4-643b-46f3-8f73-d649a12fcce9","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:21:40 [INFO]: Response: GET /users/profile - Status: 200 - Time Taken: 11ms
+2025-02-13 14:21:40 [INFO]: Response Body: {}
+2025-02-13 14:22:37 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:22:37 [INFO]: Body: {"email":"admin@jktech.com"}
+2025-02-13 14:22:37 [INFO]: Headers: {"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzYxMDMsImV4cCI6MTczOTQzOTcwM30.memoWJCcjNG3qctdt10lL7RXmiarZAeGz2aM8Fg-zYo","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"82d8073f-3946-4b71-96a8-c01849d2c068","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:22:37 [INFO]: Response: GET /users/profile - Status: 200 - Time Taken: 10ms
+2025-02-13 14:22:37 [INFO]: Response Body: {}
+2025-02-13 14:24:17 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:24:17 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"69e91a6f-4583-4dda-b44c-19d123745762","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"64"}
+2025-02-13 14:24:17 [INFO]: Body: {"email":"admin@jktech.com","password":"admin123"}
+2025-02-13 14:24:17 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 18ms
+2025-02-13 14:24:17 [INFO]: Response Body: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzY4NTcsImV4cCI6MTczOTQ0MDQ1N30.ikjEOm3dEYnhXntF7cAqWwGsCtzINX92N-CfPNh_I7U"}
+2025-02-13 14:24:39 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:24:39 [INFO]: Body: {"email":"admin@jktech.com","iat":1739435502,"exp":1739439102}
+2025-02-13 14:24:39 [INFO]: Headers: {"accept":"*/*","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzU1MDIsImV4cCI6MTczOTQzOTEwMn0.m9abNdN7pmu4aYgrjkJ1-7Xz2icwJVO8UhAF7_uPwLg","user-agent":"PostmanRuntime/7.43.0","postman-token":"947b50ad-cd68-450d-ad89-99d51783d719","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:24:39 [INFO]: Response: GET /users/profile - Status: 200 - Time Taken: 8ms
+2025-02-13 14:24:39 [INFO]: Response Body: {}
+2025-02-13 14:24:53 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:24:53 [INFO]: Body: {"email":"admin@jktech.com","iat":1739436857,"exp":1739440457}
+2025-02-13 14:24:53 [INFO]: Headers: {"accept":"*/*","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzY4NTcsImV4cCI6MTczOTQ0MDQ1N30.ikjEOm3dEYnhXntF7cAqWwGsCtzINX92N-CfPNh_I7U","user-agent":"PostmanRuntime/7.43.0","postman-token":"480fb18b-83fa-4368-8e4c-4dc22d8b9b67","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:24:53 [INFO]: Response: GET /users/profile - Status: 200 - Time Taken: 3ms
+2025-02-13 14:24:53 [INFO]: Response Body: {}
+2025-02-13 14:29:42 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:29:42 [INFO]: Body: {"email":"admin@jktech.com","iat":1739436857,"exp":1739440457}
+2025-02-13 14:29:42 [INFO]: Headers: {"accept":"*/*","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzY4NTcsImV4cCI6MTczOTQ0MDQ1N30.ikjEOm3dEYnhXntF7cAqWwGsCtzINX92N-CfPNh_I7U","user-agent":"PostmanRuntime/7.43.0","postman-token":"001fadf9-af9c-413c-8185-376f7aadc8ac","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:29:42 [INFO]: Response: GET /users/profile - Status: 200 - Time Taken: 11ms
+2025-02-13 14:29:42 [INFO]: Response Body: {}
+2025-02-13 14:30:42 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:30:42 [INFO]: Body: {"email":"admin@jktech.com","iat":1739436857,"exp":1739440457}
+2025-02-13 14:30:42 [INFO]: Headers: {"accept":"*/*","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzY4NTcsImV4cCI6MTczOTQ0MDQ1N30.ikjEOm3dEYnhXntF7cAqWwGsCtzINX92N-CfPNh_I7U","user-agent":"PostmanRuntime/7.43.0","postman-token":"a4b274c0-5114-4be3-a021-e5d9cf8f81b6","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:30:42 [INFO]: Response: GET /users/profile - Status: 200 - Time Taken: 10ms
+2025-02-13 14:30:42 [INFO]: Response Body: {}
+2025-02-13 14:30:58 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:30:58 [INFO]: Body: {"email":"admin@jktech.com","iat":1739436857,"exp":1739440457}
+2025-02-13 14:30:58 [INFO]: Headers: {"accept":"*/*","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzY4NTcsImV4cCI6MTczOTQ0MDQ1N30.ikjEOm3dEYnhXntF7cAqWwGsCtzINX92N-CfPNh_I7U","user-agent":"PostmanRuntime/7.43.0","postman-token":"e558fb02-bc58-4415-8c3e-dae6dad019bd","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:30:58 [INFO]: Response: GET /users/profile - Status: 200 - Time Taken: 3ms
+2025-02-13 14:30:58 [INFO]: Response Body: {}
+2025-02-13 14:32:18 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:32:18 [INFO]: Body: {"email":"admin@jktech.com","iat":1739436857,"exp":1739440457}
+2025-02-13 14:32:18 [INFO]: Headers: {"accept":"*/*","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzY4NTcsImV4cCI6MTczOTQ0MDQ1N30.ikjEOm3dEYnhXntF7cAqWwGsCtzINX92N-CfPNh_I7U","user-agent":"PostmanRuntime/7.43.0","postman-token":"cf419c1c-33f8-42cf-8234-60ffd8de039f","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:32:18 [INFO]: Response: GET /users/profile - Status: 200 - Time Taken: 7ms
+2025-02-13 14:32:18 [INFO]: Response Body: {"email":"admin@jktech.com","iat":1739436857,"exp":1739440457}
+2025-02-13 14:32:39 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:32:39 [INFO]: Body: {"email":"admin@jktech.com","iat":1739436857,"exp":1739440457}
+2025-02-13 14:32:39 [INFO]: Headers: {"accept":"*/*","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzY4NTcsImV4cCI6MTczOTQ0MDQ1N30.ikjEOm3dEYnhXntF7cAqWwGsCtzINX92N-CfPNh_I7U","user-agent":"PostmanRuntime/7.43.0","postman-token":"b2a7601f-9737-4ddf-8f1b-d9a161647a86","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+2025-02-13 14:32:39 [INFO]: Response: GET /users/profile - Status: 200 - Time Taken: 7ms
+2025-02-13 14:32:39 [INFO]: Response Body: {"email":"admin@jktech.com","iat":1739436857,"exp":1739440457}
+2025-02-13 14:32:50 [ERROR]: Error 401: {"message":"Unauthorized","statusCode":401}
+2025-02-13 14:33:00 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:33:00 [INFO]: Headers: {"host":"localhost:3000","connection":"keep-alive","content-length":"59","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","accept":"*/*","sec-ch-ua":"\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"","content-type":"application/json","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/api/docs","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}
+2025-02-13 14:33:00 [INFO]: Body: {"email":"admin@jktech.com","password":"admin123"}
+2025-02-13 14:33:00 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 8ms
+2025-02-13 14:33:00 [INFO]: Response Body: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzczODAsImV4cCI6MTczOTQ0MDk4MH0.GqRiT9NDI9LrPEN6f8vl_riJWibtzQvz195w1BNgeBw"}
+2025-02-13 14:33:23 [INFO]: Incoming Request: GET /users/profile
+2025-02-13 14:33:23 [INFO]: Body: {"email":"admin@jktech.com","iat":1739437380,"exp":1739440980}
+2025-02-13 14:33:23 [INFO]: Headers: {"host":"localhost:3000","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0MzczODAsImV4cCI6MTczOTQ0MDk4MH0.GqRiT9NDI9LrPEN6f8vl_riJWibtzQvz195w1BNgeBw","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","accept":"*/*","sec-ch-ua":"\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"","sec-ch-ua-mobile":"?0","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/api/docs","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}
+2025-02-13 14:33:23 [INFO]: Response: GET /users/profile - Status: 200 - Time Taken: 4ms
+2025-02-13 14:33:23 [INFO]: Response Body: {"email":"admin@jktech.com","iat":1739437380,"exp":1739440980}
+2025-02-13 14:33:41 [ERROR]: Error 401: {"message":"Unauthorized","statusCode":401}
+2025-02-13 14:34:27 [ERROR]: Error 403: {"message":"Forbidden resource","error":"Forbidden","statusCode":403}
+2025-02-13 14:35:02 [ERROR]: Error 403: {"message":"Forbidden resource","error":"Forbidden","statusCode":403}
+2025-02-13 14:36:03 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:36:03 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"a7e60d86-84a2-431b-9e58-b4ec644ca5b0","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"65"}
+2025-02-13 14:36:03 [INFO]: Body: {"email":"admin@jktech.com","password":"admina123"}
+2025-02-13 14:36:03 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 17ms
+2025-02-13 14:36:03 [INFO]: Response Body: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0Mzc1NjMsImV4cCI6MTczOTQ0MTE2M30.Q4I6FobnWmJsXZdYdUHxmncLDu7jUebLIvxrsgu26ds"}
+2025-02-13 14:36:05 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:36:05 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"61bc99d0-8a39-4ab9-a978-a2af45b2f8d0","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"65"}
+2025-02-13 14:36:05 [INFO]: Body: {"email":"admin@jktech.com","password":"admina123"}
+2025-02-13 14:36:05 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 6ms
+2025-02-13 14:36:05 [INFO]: Response Body: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0Mzc1NjUsImV4cCI6MTczOTQ0MTE2NX0.H19PWpoUJdVGp4CHJ8Ig0Yvd2JKRJ5vFv6jFi8atf-A"}
+2025-02-13 14:36:06 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:36:06 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"2e398832-4691-4091-9a0f-1eded8854dec","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"65"}
+2025-02-13 14:36:06 [INFO]: Body: {"email":"admin@jktech.com","password":"admina123"}
+2025-02-13 14:36:06 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 6ms
+2025-02-13 14:36:06 [INFO]: Response Body: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpYXQiOjE3Mzk0Mzc1NjYsImV4cCI6MTczOTQ0MTE2Nn0.Nu_QXtqcqSsIMQPe3oImDGwnhbuYnFS-Bf_K7xVh5hQ"}
+2025-02-13 14:38:24 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:38:24 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"0338c82f-aeb2-4c6d-9f68-6fa521eb8227","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"65"}
+2025-02-13 14:38:24 [INFO]: Body: {"email":"admin@jktech.com","password":"admina123"}
+2025-02-13 14:38:24 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 93ms
+2025-02-13 14:38:24 [INFO]: Response Body: undefined
+2025-02-13 14:39:32 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:39:32 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"eefff253-99c4-4f73-811a-291209e7f5b6","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"65"}
+2025-02-13 14:39:32 [INFO]: Body: {"email":"admin@jktech.com","password":"admina123"}
+2025-02-13 14:39:32 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 123ms
+2025-02-13 14:39:32 [INFO]: Response Body: {"response":{"message":"User entered wrong details","error":"Unauthorized","statusCode":401},"status":401,"options":{},"message":"User entered wrong details","name":"UnauthorizedException"}
+2025-02-13 14:41:19 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:41:19 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"3966b40a-381a-4d5c-9634-d26d654f7abf","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"65"}
+2025-02-13 14:41:19 [INFO]: Body: {"email":"admin@jktech.com","password":"admina123"}
+2025-02-13 14:41:19 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 88ms
+2025-02-13 14:41:19 [INFO]: Response Body: false
+2025-02-13 14:41:31 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:41:31 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"250c74ff-d768-40f6-aa00-e7449e5e6601","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"65"}
+2025-02-13 14:41:31 [INFO]: Body: {"email":"admin@jktech.com","password":"admina123"}
+2025-02-13 14:41:31 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 92ms
+2025-02-13 14:41:31 [INFO]: Response Body: {"response":{"message":"Unauthorized","statusCode":401},"status":401,"options":{},"message":"Unauthorized","name":"UnauthorizedException"}
+2025-02-13 14:43:19 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:43:19 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"39bbfe79-b64e-4062-b0c0-b52ac6d11bab","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"65"}
+2025-02-13 14:43:19 [INFO]: Body: {"email":"admin@jktech.com","password":"admina123"}
+2025-02-13 14:43:19 [ERROR]: Error 401: {"message":"Invalid email or password","error":"Unauthorized","statusCode":401}
+2025-02-13 14:43:27 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:43:27 [INFO]: Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"cdc406bb-2a25-4e94-bb58-4ff6f2eed7cb","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"64"}
+2025-02-13 14:43:27 [INFO]: Body: {"email":"admin@jktech.com","password":"admin123"}
+2025-02-13 14:43:27 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 88ms
+2025-02-13 14:43:27 [INFO]: Response Body: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpZCI6IjNmNjI5ZTRmLTI0YTktNDlmMi1iM2RjLTY0ZDJhNTUzM2MzZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczOTQzODAwNywiZXhwIjoxNzM5NDQxNjA3fQ.MNo89Bk50vgSxSSrLxDqvn7HfnJ9Oi8uXSc2FmGYf4o"}
+2025-02-13 14:45:12 [ERROR]: Error 401: {"message":"Unauthorized","statusCode":401}
+2025-02-13 14:45:16 [ERROR]: Error 401: {"message":"Unauthorized","statusCode":401}
+2025-02-13 14:45:39 [INFO]: Incoming Request: POST /documents/upload
+2025-02-13 14:45:39 [INFO]: Headers: {"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpZCI6IjNmNjI5ZTRmLTI0YTktNDlmMi1iM2RjLTY0ZDJhNTUzM2MzZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczOTQzODAwNywiZXhwIjoxNzM5NDQxNjA3fQ.MNo89Bk50vgSxSSrLxDqvn7HfnJ9Oi8uXSc2FmGYf4o","user-agent":"PostmanRuntime/7.43.0","accept":"*/*","postman-token":"20d827ab-40f0-4bc2-b751-b936d7545e2c","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-type":"multipart/form-data; boundary=--------------------------023091644095895549415104","content-length":"96205"}
+2025-02-13 14:45:39 [INFO]: Response: POST /documents/upload - Status: 201 - Time Taken: 91ms
+2025-02-13 14:45:39 [INFO]: Response Body: {"title":"400010060261_pay_PpzeXyFPmps3sG.pdf","content":"/uploads/400010060261_pay_PpzeXyFPmps3sG.pdf","fileType":"application/pdf","size":95967,"owner":{"id":"3f629e4f-24a9-49f2-b3dc-64d2a5533c3e","email":"admin@jktech.com","role":"admin"},"id":"9fdf0e94-b94d-4368-9568-4044e158dddc"}
+2025-02-13 14:46:15 [ERROR]: Error 401: {"message":"Unauthorized","statusCode":401}
+2025-02-13 14:47:58 [ERROR]: Error 401: {"message":"Unauthorized","statusCode":401}
+2025-02-13 14:48:17 [INFO]: Incoming Request: POST /auth/login
+2025-02-13 14:48:17 [INFO]: Headers: {"host":"localhost:3000","connection":"keep-alive","content-length":"59","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","accept":"*/*","sec-ch-ua":"\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"","content-type":"application/json","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/api/docs","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}
+2025-02-13 14:48:17 [INFO]: Body: {"email":"admin@jktech.com","password":"admin123"}
+2025-02-13 14:48:17 [INFO]: Response: POST /auth/login - Status: 201 - Time Taken: 216ms
+2025-02-13 14:48:17 [INFO]: Response Body: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpZCI6IjNmNjI5ZTRmLTI0YTktNDlmMi1iM2RjLTY0ZDJhNTUzM2MzZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczOTQzODI5NywiZXhwIjoxNzM5NDQxODk3fQ.5vndBFJOq7gFC1QRXIl-OKiahuZMUOTUH3I_SznbnKM"}
+2025-02-13 14:48:53 [INFO]: Incoming Request: POST /documents/upload
+2025-02-13 14:48:53 [INFO]: Headers: {"host":"localhost:3000","connection":"keep-alive","content-length":"848","sec-ch-ua-platform":"\"Windows\"","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGprdGVjaC5jb20iLCJpZCI6IjNmNjI5ZTRmLTI0YTktNDlmMi1iM2RjLTY0ZDJhNTUzM2MzZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczOTQzODI5NywiZXhwIjoxNzM5NDQxODk3fQ.5vndBFJOq7gFC1QRXIl-OKiahuZMUOTUH3I_SznbnKM","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","accept":"*/*","sec-ch-ua":"\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"","content-type":"multipart/form-data; boundary=----WebKitFormBoundaryqTJymXx4UBw8A3Co","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/api/docs","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}
+2025-02-13 14:48:54 [INFO]: Response: POST /documents/upload - Status: 201 - Time Taken: 86ms
+2025-02-13 14:48:54 [INFO]: Response Body: {"title":"app.controller.spec.ts","content":"/uploads/app.controller.spec.ts","fileType":"video/vnd.dlna.mpeg-tts","size":639,"owner":{"id":"3f629e4f-24a9-49f2-b3dc-64d2a5533c3e","email":"admin@jktech.com","role":"admin"},"id":"f661467f-a1ba-4bf0-a26c-206c73315a40"}
