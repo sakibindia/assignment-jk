@@ -3,13 +3,13 @@ import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { User } from '../users/entities/users.entity';
 import { LoggerService } from '../common/logger/logger.service';
-import { CustomExceptionFilter } from 'src/common/exceptions/exception.filter';
+import { CustomExceptionFilter } from '../common/exceptions/exception.filter';
 import { ApiBearerAuth, ApiBody, ApiOperation, ApiResponse } from '@nestjs/swagger';
-import { CurrentUser } from 'src/common/decorators/current-user.decorator';
-import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
-import { RolesGuard } from 'src/auth/guards/roles-guard';
+import { CurrentUser } from '../common/decorators/current-user.decorator';
+import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
+import { RolesGuard } from '../auth/guards/roles-guard';
 import { CreateUserValidationSchema } from './validation/user.validations';
-import { JoiValidationPipe } from 'src/common/pipes/validation.pipe';
+import { JoiValidationPipe } from '../common/pipes/validation.pipe';
 
 @Controller('users')
 @UseFilters(CustomExceptionFilter)
