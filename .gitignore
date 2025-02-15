@@ -13,3 +13,4 @@ dist/*
 *.d.ts
 logs/*
 documentation/*
+.log
