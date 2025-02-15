@@ -35,7 +35,7 @@ let UsersController = class UsersController {
     }
     getProfile(user) {
         if (!user) {
-            throw new common_1.NotFoundException(`User not found`);
+            throw new common_1.NotFoundException('User not found');
         }
         this.logger.info(`Body: ${JSON.stringify(user)}`);
         return user;

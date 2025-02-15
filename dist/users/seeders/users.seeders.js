@@ -24,7 +24,9 @@ let UsersSeeder = class UsersSeeder {
         this.userRepository = userRepository;
     }
     async seedAdminUser() {
-        const adminExists = await this.userRepository.findOne({ where: { email: 'admin@jktech.com' } });
+        const adminExists = await this.userRepository.findOne({
+            where: { email: 'admin@jktech.com' }
+        });
         if (!adminExists) {
             const adminUser = this.userRepository.create({
                 email: 'admin@jktech.com',

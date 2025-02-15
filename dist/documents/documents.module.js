@@ -17,10 +17,18 @@ let DocumentsModule = class DocumentsModule {
 exports.DocumentsModule = DocumentsModule;
 exports.DocumentsModule = DocumentsModule = __decorate([
     (0, common_1.Module)({
-        imports: [typeorm_1.TypeOrmModule.forFeature([documents_entity_1.Document])],
-        controllers: [documents_controller_1.DocumentsController],
-        providers: [documents_service_1.DocumentService],
-        exports: [documents_service_1.DocumentService],
+        imports: [
+            typeorm_1.TypeOrmModule.forFeature([documents_entity_1.Document])
+        ],
+        controllers: [
+            documents_controller_1.DocumentsController
+        ],
+        providers: [
+            documents_service_1.DocumentService
+        ],
+        exports: [
+            documents_service_1.DocumentService
+        ],
     })
 ], DocumentsModule);
 //# sourceMappingURL=documents.module.js.map

@@ -47,9 +47,11 @@ exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
             config_1.ConfigModule.forRoot({
+                envFilePath: '.env',
                 isGlobal: true,
             }),
             cache_manager_1.CacheModule.registerAsync({
+                imports: [config_1.ConfigModule],
                 useFactory: async (configService) => {
                     const useRedis = configService.get('USE_REDIS');
                     if (useRedis) {
@@ -70,16 +72,20 @@ exports.AppModule = AppModule = __decorate([
                 },
                 inject: [config_1.ConfigService],
             }),
-            typeorm_1.TypeOrmModule.forRoot({
-                type: 'postgres',
-                host: 'localhost',
-                port: 5432,
-                username: 'postgres',
-                password: 'sakib786M',
-                database: 'jk-tech',
-                entities: [__dirname + '/**/*.entity.{ts,js}'],
-                synchronize: true,
-                subscribers: [users_subscriber_1.UserSubscriber],
+            typeorm_1.TypeOrmModule.forRootAsync({
+                imports: [config_1.ConfigModule],
+                useFactory: (configService) => ({
+                    type: 'postgres',
+                    host: configService.get('PG_HOST') || 'localhost',
+                    port: configService.get('PG_PORT') || 6379,
+                    username: configService.get('PG_USERNAME') || 'postgres',
+                    password: configService.get('PG_PASS') || 'jktech123',
+                    database: configService.get('PG_DB') || 'jk-tech',
+                    entities: [__dirname + '/**/*.entity.{ts,js}'],
+                    synchronize: true,
+                    subscribers: [users_subscriber_1.UserSubscriber],
+                }),
+                inject: [config_1.ConfigService],
             }),
             users_module_1.UsersModule,
             auth_module_1.AuthModule,

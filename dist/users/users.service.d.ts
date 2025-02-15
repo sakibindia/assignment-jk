@@ -10,5 +10,5 @@ export declare class UsersService {
         success: boolean;
         message: string;
     }>;
-    findOne(email: string): Promise<any | undefined>;
+    findOne(email: string): Promise<User | undefined | any>;
 }

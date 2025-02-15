@@ -31,7 +31,7 @@ __decorate([
 ], Ingestion.prototype, "status", void 0);
 __decorate([
     (0, typeorm_1.Column)({ nullable: true }),
-    __metadata("design:type", String)
+    __metadata("design:type", Object)
 ], Ingestion.prototype, "pythonJobId", void 0);
 __decorate([
     (0, typeorm_1.CreateDateColumn)(),
@@ -39,7 +39,7 @@ __decorate([
 ], Ingestion.prototype, "createdAt", void 0);
 __decorate([
     (0, typeorm_1.Column)({ nullable: true }),
-    __metadata("design:type", Date)
+    __metadata("design:type", Object)
 ], Ingestion.prototype, "completedAt", void 0);
 __decorate([
     (0, typeorm_1.Column)({ type: 'json', nullable: true }),

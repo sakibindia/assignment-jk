@@ -7,8 +7,8 @@ export declare enum IngestionStatus {
 export declare class Ingestion {
     id: string;
     status: IngestionStatus;
-    pythonJobId: string;
+    pythonJobId: string | null;
     createdAt: Date;
-    completedAt: Date;
+    completedAt: Date | null;
     metadata: any;
 }

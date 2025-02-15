@@ -21,15 +21,16 @@ let LoggingInterceptor = class LoggingInterceptor {
         const request = context.switchToHttp().getRequest();
         const { method, url, headers, body } = request;
         const start = Date.now();
-        this.logger.info(`Incoming Request: ${method} ${url}`);
-        this.logger.info(`Headers: ${JSON.stringify(headers)}`);
-        if (body) {
-            this.logger.info(`Body: ${JSON.stringify(body)}`);
+        this.logger.info(`[REQUEST] Method: ${method} | URL: ${url}`);
+        this.logger.info(`[REQUEST] Headers: ${JSON.stringify(headers)}`);
+        if (body && Object.keys(body).length > 0) {
+            this.logger.info(`[REQUEST] Body: ${JSON.stringify(body)}`);
         }
         return next.handle().pipe((0, rxjs_1.tap)((response) => {
             const timeTaken = Date.now() - start;
-            this.logger.info(`Response: ${method} ${url} - Status: ${context.switchToHttp().getResponse().statusCode} - Time Taken: ${timeTaken}ms`);
-            this.logger.info(`Response Body: ${JSON.stringify(response)}`);
+            const statusCode = context.switchToHttp().getResponse().statusCode;
+            this.logger.info(`[RESPONSE] Method: ${method} | URL: ${url} | Status: ${statusCode} | Time Taken: ${timeTaken}ms`);
+            this.logger.info(`[RESPONSE] Body: ${JSON.stringify(response)}`);
         }));
     }
 };

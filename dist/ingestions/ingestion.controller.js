@@ -52,6 +52,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], IngestionsController.prototype, "getStatus", null);
 exports.IngestionsController = IngestionsController = __decorate([
+    (0, swagger_1.ApiTags)('Ingestions'),
     (0, common_1.Controller)('ingestions'),
     __metadata("design:paramtypes", [ingestion_service_1.IngestionsService])
 ], IngestionsController);

@@ -25,8 +25,15 @@ exports.UsersModule = UsersModule = __decorate([
             cache_manager_1.CacheModule.register(),
         ],
         controllers: [users_controller_1.UsersController],
-        providers: [users_service_1.UsersService, logger_service_1.LoggerService, users_seeders_1.UsersSeeder],
-        exports: [users_service_1.UsersService, users_seeders_1.UsersSeeder]
+        providers: [
+            users_service_1.UsersService,
+            logger_service_1.LoggerService,
+            users_seeders_1.UsersSeeder,
+        ],
+        exports: [
+            users_service_1.UsersService,
+            users_seeders_1.UsersSeeder
+        ],
     })
 ], UsersModule);
 //# sourceMappingURL=users.module.js.map
