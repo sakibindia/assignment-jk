@@ -12,3 +12,4 @@ logger/
 dist/*
 *.d.ts
 logs/*
+documentation/*
