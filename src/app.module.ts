@@ -11,15 +11,16 @@ import { LoggingInterceptor } from './common/interceptors/logger.interceptors';
 import { CustomExceptionFilter } from './common/exceptions/exception.filter';
 import { DataSource } from 'typeorm';
 import { UserSubscriber } from './users/subscribers/users.subscriber';
-import { UsersSeeder } from './users/seeders/users.seeders';
 import { DocumentsModule } from './documents/documents.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
+      envFilePath: '.env',
       isGlobal: true, // Makes ConfigService available across all modules
     }),
     CacheModule.registerAsync({
-      useFactory: async(configService: ConfigService)=> {
+      imports: [ConfigModule],
+      useFactory: async (configService: ConfigService) => {
         const useRedis = configService.get<boolean>('USE_REDIS'); // Read from env/config
         if (useRedis) {
           return {
@@ -38,23 +39,26 @@ import { DocumentsModule } from './documents/documents.module';
       },
       inject: [ConfigService],
     }),
-    TypeOrmModule.forRoot({
-      type: 'postgres',
-      host: 'localhost',
-      port: 5432,
-      username: 'postgres',
-      password: 'sakib786M',
-      database: 'jk-tech',
-      entities:  [__dirname + '/**/*.entity.{ts,js}'],
-      synchronize: true, // disable in production
-      subscribers: [UserSubscriber], // Register the subscriber
-
+    TypeOrmModule.forRootAsync({
+      imports: [ConfigModule],
+      useFactory: (configService: ConfigService) => ({
+        type: 'postgres',
+        host: configService.get<string>('PG_HOST') || 'localhost',
+        port: configService.get<number>('PG_PORT') || 6379,
+        username: configService.get<string>('PG_USERNAME') || 'postgres',
+        password: configService.get<string>('PG_PASS') || 'jktech123',
+        database: configService.get<string>('PG_DB') || 'jk-tech',
+        entities: [__dirname + '/**/*.entity.{ts,js}'],
+        synchronize: true, // disable in production
+        subscribers: [UserSubscriber], // Register the subscriber
+      }),
+      inject: [ConfigService],
     }),
     UsersModule,
     AuthModule,
     DocumentsModule
   ],
-  
+
   providers: [
     LoggerService,
     {
@@ -68,7 +72,7 @@ import { DocumentsModule } from './documents/documents.module';
   ],
 })
 export class AppModule implements OnModuleDestroy, OnApplicationShutdown {
-  constructor(private readonly dataSource: DataSource) {}
+  constructor(private readonly dataSource: DataSource) { }
 
   async onModuleDestroy() {
     if (this.dataSource.isInitialized) {
