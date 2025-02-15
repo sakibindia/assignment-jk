@@ -8,13 +8,32 @@ import { UserRole } from '../entities/user-role.enum';
 
 @Injectable()
 export class UsersSeeder {
+  /**
+   * Constructor to inject the User repository.
+   * 
+   * @param userRepository - Repository for the User entity.
+   */
   constructor(
     @InjectRepository(User)
     private userRepository: Repository<User>,
   ) {}
 
-  async seedAdminUser() {
-    const adminExists = await this.userRepository.findOne({ where: { email: 'admin@jktech.com' } });
+  /**
+   * Seeds the database with an admin user if it doesn't already exist.
+   * 
+   * This function checks if an admin user with the email 'admin@jktech.com'
+   * already exists. If not, it creates a new admin user with a hashed password
+   * and the role set to ADMIN.
+   * 
+   * @returns A promise that resolves when the seeding is complete.
+   */
+  async seedAdminUser(): Promise<void> {
+    // Check if the admin user already exists
+    const adminExists = await this.userRepository.findOne({ 
+      where: { email: 'admin@jktech.com' } 
+    });
+
+    // If the admin doesn't exist, create and save the admin user
     if (!adminExists) {
       const adminUser = this.userRepository.create({
         email: 'admin@jktech.com',
