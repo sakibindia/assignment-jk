@@ -11,7 +11,7 @@ export class LoggerService {
         return `${timestamp} [${level.toUpperCase()}]: ${message}`;
       }),
     ),
-    transports: [
+    transports: [  
       new transports.Console(),
       new transports.File({ filename: 'logs/app.log', level: 'info' }),
       new transports.File({ filename: 'logs/errors.log', level: 'error' }),
