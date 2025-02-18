@@ -1,92 +1,168 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+NestJS Project
+<p align="center"> <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a> </p>
+NPM Version
+Package License
+NPM Downloads
+CircleCI
+Coverage
+Discord
+Backers on Open Collective
+Sponsors on Open Collective
+Donate
+Support us
+Twitter Follow
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Description
+This is a NestJS project that demonstrates a scalable and efficient server-side application. It includes features like:
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+User Management: Authentication and user-related operations.
 
-## Description
+Document Management: Handling documents with CRUD operations.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Caching: Integrated Redis for caching.
 
-## Project setup
+Database: PostgreSQL for data persistence.
 
-```bash
-$ npm install
-```
+Swagger Documentation: API documentation for easy testing and integration.
 
-## Compile and run the project
+Docker Support: Ready-to-use Docker and Docker Compose configurations for easy deployment.
 
-```bash
-# development
-$ npm run start
+Table of Contents
+Project Setup
 
-# watch mode
-$ npm run start:dev
+Running the Project
 
-# production mode
-$ npm run start:prod
-```
+Local Development
 
-## Run tests
+Using Docker
 
-```bash
-# unit tests
-$ npm run test
+Using Docker Compose
 
-# e2e tests
-$ npm run test:e2e
+API Documentation
 
-# test coverage
-$ npm run test:cov
-```
+Testing
 
-## Deployment
+Deployment
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+Resources
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+Stay in Touch
 
-```bash
-$ npm install -g mau
-$ mau deploy
-```
+License
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+Project Setup
+Clone the repository:
 
-## Resources
 
-Check out a few resources that may come in handy when working with NestJS:
+git clone <repository-url>
+cd <project-folder>
+Install dependencies:
 
-## Stay in touch
 
-- Author - Mohd Sakib
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+npm install
+Set up environment variables:
 
-## License
+Create a .env file in the root directory.
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+Add the required environment variables (e.g., PG_HOST, PG_PORT, PG_USERNAME, PG_PASS, PG_DB, REDIS_HOST, REDIS_PORT).
 
-For docs
-npm i -D @compodoc/compodoc
-npx @compodoc/compodoc -p tsconfig.json -s
-Run on Browser 
-http://localhost:8080/
+Running the Project
+Local Development
+Start the application in development mode:
+
+
+npm run start:dev
+The application will be available at:
+
+Copy
+http://localhost:3000
+Using Docker
+Build the Docker image:
+
+
+docker build -t nestjs-app .
+Run the Docker container:
+
+
+docker run -p 3000:3000 -p 8080:8080 nestjs-app
+Access the application:
+
+Copy
+http://localhost:3000
+Access the documentation:
+
+Copy
+http://localhost:8080
+Using Docker Compose
+Start the application with Docker Compose:
+
+
+docker-compose up
+The following services will be started:
+
+Application: http://localhost:3000
+
+PostgreSQL Database: localhost:5432
+
+Redis Cache: localhost:6379
+
+Documentation: http://localhost:8080
+
+To stop the services:
+
+
+docker-compose down
+API Documentation
+The API documentation is automatically generated using Swagger. To access it:
+
+Start the application.
+
+Navigate to:
+
+Copy
+http://localhost:3000/api/docs
+Testing
+Run unit tests:
+
+
+npm run test
+Run end-to-end (e2e) tests:
+
+
+npm run test:e2e
+Check test coverage:
+
+
+npm run test:cov
+Deployment
+To deploy the application to production:
+
+Build the production version:
+
+
+npm run build
+Start the application in production mode:
+
+
+npm run start:prod
+For cloud-based deployment, consider using Mau, the official platform for deploying NestJS applications on AWS.
+
+Resources
+NestJS Documentation
+
+TypeORM Documentation
+
+Redis Documentation
+
+Docker Documentation
+
+Stay in Touch
+Author: Mohd Sakib
+
+Website: https://nestjs.com
+
+Twitter: @nestframework
+
+License
+This project is MIT licensed.
+
