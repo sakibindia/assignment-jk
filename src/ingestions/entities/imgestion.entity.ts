@@ -18,6 +18,9 @@ export class Ingestion {
   @Column({ type: 'varchar', nullable: true })
   pythonJobId: string;
 
+  @Column({ type: 'varchar', nullable: true })
+  jobName: string;
+
   @CreateDateColumn()
   createdAt: Date;
 

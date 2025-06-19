@@ -9,7 +9,7 @@ export class LoginDto {
    * User email
    * @example 'admin@jktech.com'
    */
-  @ApiProperty({ example: 'admin@jktech.com', description: 'User email' })
+  @ApiProperty({ example: 'admin@neotech.com', description: 'User email' })
   email: string;
 
   /**

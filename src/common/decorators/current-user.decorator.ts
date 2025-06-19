@@ -1,5 +1,6 @@
 import { createParamDecorator, ExecutionContext, UnauthorizedException } from '@nestjs/common';
 import { User } from '../../users/entities/users.entity';
+import { GqlExecutionContext } from '@nestjs/graphql';
 
 /**
  * Custom Decorator: CurrentUser
@@ -34,13 +35,17 @@ export const CurrentUser = createParamDecorator(
     key: K,
     ctx: ExecutionContext
   ): User => {
-    const request = ctx.switchToHttp().getRequest();
-    const user = request.user as User;
-    
+    let user: any
+    if (ctx.getType() === 'http') {
+      user = ctx.switchToHttp().getRequest().user;
+    } else if (ctx.getType() as string === 'graphql') {
+      const ctx_ = GqlExecutionContext.create(ctx);
+      user = ctx_.getContext().req.user;
+    }
     if (!user) {
       throw new UnauthorizedException('Not authenticated');
     }
-    
+
     // Return the full user object
     return user;
 
