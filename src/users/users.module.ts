@@ -7,6 +7,7 @@ import { User } from './entities/users.entity';
 import { LoggerService } from '../common/logger/logger.service';
 import { CacheModule } from '@nestjs/cache-manager';
 import { UsersSeeder } from './seeders/users.seeders';
+import { UsersResolver } from './user.resolver';
 
 /**
  * UsersModule is responsible for handling user-related operations,
@@ -32,6 +33,7 @@ import { UsersSeeder } from './seeders/users.seeders';
     UsersService,  // Provides business logic for user-related operations.
     LoggerService, // Custom logger service for logging application events.
     UsersSeeder,   // Seeder for creating initial admin user data.
+    UsersResolver,
   ],
   exports: [
     UsersService, // Exports UsersService to be used in other modules.

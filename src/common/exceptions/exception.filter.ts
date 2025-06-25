@@ -1,4 +1,11 @@
-import { ExceptionFilter, Catch, ArgumentsHost, HttpException } from '@nestjs/common';
+import {
+  ExceptionFilter,
+  Catch,
+  ArgumentsHost,
+  HttpException,
+  HttpStatus,
+} from '@nestjs/common';
+import { GqlArgumentsHost } from '@nestjs/graphql';
 import { Response } from 'express';
 import { LoggerService } from '../../common/logger/logger.service';
 
@@ -9,7 +16,7 @@ import { LoggerService } from '../../common/logger/logger.service';
  * It also logs the error using the custom `LoggerService`.
  * 
  * @usageNotes
- * Apply this filter globally or at the controller level for consistent error handling and logging.
+ * Apply this filter globally or at the controller/resolver level for consistent error handling and logging.
  * 
  * Example:
  * ```ts
@@ -31,22 +38,45 @@ export class CustomExceptionFilter implements ExceptionFilter {
    * Catch Method
    * 
    * This method is triggered when an `HttpException` is thrown.
-   * It extracts the status and response body from the exception,
-   * logs the error, and customizes the HTTP response.
+   * It supports both HTTP and GraphQL contexts.
    * 
    * @param exception - The caught `HttpException`.
-   * @param host - Provides methods to get request and response objects.
+   * @param host - Provides methods to get request/response objects or GraphQL context.
    */
   catch(exception: HttpException, host: ArgumentsHost) {
-    const ctx = host.switchToHttp();
-    const response = ctx.getResponse<Response>();
-    const status = exception.getStatus();
-    const errorResponse = exception.getResponse();
+    const status = exception.getStatus?.() || HttpStatus.INTERNAL_SERVER_ERROR;
+    const errorResponse = exception.getResponse?.() || exception.message;
 
-    // Log the error details
+    // Log the error
     this.logger.error(`Error ${status}: ${JSON.stringify(errorResponse)}`);
 
-    // Send the custom error response
-    response.status(status).json(errorResponse);
+    const contextType = host.getType();
+
+    // Handle GraphQL context
+    if (contextType as string === 'graphql') {
+      const gqlHost = GqlArgumentsHost.create(host);
+      throw new HttpException(
+        {
+          success: false,
+          message:
+            typeof errorResponse === 'string'
+              ? errorResponse
+              : (errorResponse as any)?.message || 'Unexpected error occurred',
+        },
+        status,
+      );
+    }
+
+    // Handle HTTP (REST) context
+    const ctx = host.switchToHttp();
+    const response = ctx.getResponse<Response>();
+
+    response.status(status).json({
+      success: false,
+      message:
+        typeof errorResponse === 'string'
+          ? errorResponse
+          : (errorResponse as any)?.message || 'Unexpected error occurred',
+    });
   }
 }

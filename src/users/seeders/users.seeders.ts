@@ -30,13 +30,13 @@ export class UsersSeeder {
   async seedAdminUser(): Promise<void> {
     // Check if the admin user already exists
     const adminExists = await this.userRepository.findOne({ 
-      where: { email: 'admin@jktech.com' } 
+      where: { email: 'admin@neotech.com' } 
     });
 
     // If the admin doesn't exist, create and save the admin user
     if (!adminExists) {
       const adminUser = this.userRepository.create({
-        email: 'admin@jktech.com',
+        email: 'admin@neotech.com',
         password: await bcrypt.hash('admin123', 10), // Hash the password
         role: UserRole.ADMIN, // Assign admin role
       });

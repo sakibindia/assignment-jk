@@ -1,0 +1,40 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type AuthResponse {
+  accessToken: String!
+  email: String!
+  role: String!
+}
+
+input CreateUserDto {
+  email: String!
+  password: String!
+  role: String!
+}
+
+type CreateUserResponse {
+  message: String!
+  success: Boolean!
+}
+
+input LoginInput {
+  email: String!
+  password: String!
+}
+
+type Mutation {
+  createUser(input: CreateUserDto!): CreateUserResponse!
+  login(loginInput: LoginInput!): AuthResponse!
+}
+
+type Query {
+  getProfile: UserDTO!
+}
+
+type UserDTO {
+  email: String!
+  id: ID!
+  role: String!
+}

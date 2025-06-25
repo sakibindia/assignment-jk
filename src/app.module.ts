@@ -1,4 +1,6 @@
 import { Module, OnApplicationShutdown, OnModuleDestroy } from '@nestjs/common';
+import { GraphQLModule } from '@nestjs/graphql';
+import { join } from 'path';
 import * as redisStore from 'cache-manager';
 import { CacheModule } from '@nestjs/cache-manager';
 import { ConfigModule, ConfigService } from '@nestjs/config';
@@ -12,6 +14,7 @@ import { CustomExceptionFilter } from './common/exceptions/exception.filter';
 import { DataSource } from 'typeorm';
 import { UserSubscriber } from './users/subscribers/users.subscriber';
 import { DocumentsModule } from './documents/documents.module';
+import { ApolloDriver } from '@nestjs/apollo';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -46,17 +49,24 @@ import { DocumentsModule } from './documents/documents.module';
         host: configService.get<string>('PG_HOST') || 'localhost',
         port: configService.get<number>('PG_PORT') || 6379,
         username: configService.get<string>('PG_USERNAME') || 'postgres',
-        password: configService.get<string>('PG_PASS') || 'jktech123',
-        database: configService.get<string>('PG_DB') || 'jk-tech',
+        password: configService.get<string>('PG_PASS') || 'neo123',
+        database: configService.get<string>('PG_DB') || 'neotech',
         entities: [__dirname + '/**/*.entity.{ts,js}'],
         synchronize: true, // disable in production
         subscribers: [UserSubscriber], // Register the subscriber
       }),
       inject: [ConfigService],
     }),
+    GraphQLModule.forRoot({
+      autoSchemaFile: join(process.cwd(), 'src/schema.gql'), // 👈 auto-generate schema
+      sortSchema: true,
+      playground: true, // enable GraphQL Playground UI
+      driver: ApolloDriver,
+      context: ({ req }) => ({ req }), // 👈 Required for guards to access req.user
+    }),
     UsersModule,
     AuthModule,
-    DocumentsModule
+    DocumentsModule,
   ],
 
   providers: [
